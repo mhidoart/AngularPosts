@@ -1,5 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container" style="margin: 20px;">
+  <div class="text-info" style="text-align: center;"><h1> voici mes posts: </h1></div>
   <ul class="list-group" *ngFor="let p of posts">
     <div>
       <li [ngClass]="{'list-group-item list-group-item-success': (p.loveIts - p.hate) >0,'list-group-item list-group-item-danger':(p.loveIts - p.hate) <=0}" >

@@ -17,11 +17,11 @@ export class AppComponent {
     {title:'post4',content:"contenu4 "+ this.addedText,loveIts: 0,hate: 0,created_at: new Date()}
   ];
   plusLoveIt(p: {title: string, content: string, loveIts: number, created_at: Date }){
-    p.loveIts++;
+    p.loveIts = p.loveIts+1;
   }
 
   dissLoveIt(p: {title: string, content: string, loveIts: number, hate: number, created_at: Date }) {
-    p.hate++;
+    p.hate = p.hate+1;
   }
 
 }
